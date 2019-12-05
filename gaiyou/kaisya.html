@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>ｍｙＥCサイト</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9/build/highlight.min.js"></script>
+    <script>
+    hljs.initHighlightingOnLoad();
+    hljs.configure({
+        tabReplace: '  ', // 2 spaces
+    })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="https://cccabinet.jpn.org/bootstrap4/js/style.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <header class="col">
+            <a href="../index.html"><img src="../img/TOP.png" alt="タイトル画像"></a>
+        </header>
+        <div class="mt-3">
+            <a class="btn btn-warning kaimono" href="../shop/shop_cartlook.php" role="button">買い物かご</a>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-light bg-light col-12 border-top border-bottom">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">当店について</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown">
+                            <a class="dropdown-item" href="../gaiyou/kaisya.html">ごあいさつ</a>
+                            <a class="dropdown-item" href="../gaiyou/annai.html">ご利用案内</a>
+                            <a class="dropdown-item" href="../gaiyou/tokutei.html">特定商取引法に基づく表示</a>
+                            <a class="dropdown-item" href="../toiawase/toiawase_form.html">お問い合わせ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">お買い物はコチラ</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown">
+                            <a class="dropdown-item" href="../shop/shop_list.php">全ての商品</a>
+                            <a class="dropdown-item" href="../shop/shop_list_yasai.php">お野菜</a>
+                            <a class="dropdown-item" href="../shop/shop_list_niku.php">お肉</a>
+                            <a class="dropdown-item" href="../shop/shop_list_sakana.php">お魚</a>
+                            <a class="dropdown-item" href="../shop/shop_list_nitiyou.php">日用品</a>
+                            <a class="dropdown-item" href="../shop/shop_list_other.php">その他商品</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ギャラリーはコチラ</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown">
+                            <a class="dropdown-item" href="../gallery/gaikan.html">外観</a>
+                            <a class="dropdown-item" href="../gallery/naisou.html">内装</a>
+                        </div>
+                    </li>
+                    <div class="">
+                        <a class="btn btn-secondary" href="../shop/member_login.html" role="button">ログイン</a>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    <main>
+        <div class="new">
+            <br>
+            <h1>会社紹介</h1>
+            <h2>代表挨拶</h2>
+            <div class="col">
+                <p>（社長挨拶のサンプル）弊社は田舎で野菜をはじめ食材や日用品の販売などの事業を行っています。<br>
+                    お陰様で創業１００周年を迎える事ができました。<br>
+                    ターミナル駅周辺に○店舗、全部で○店舗あります。<br>
+                    パーティに対応できる在庫があります。<br>
+                    地元の食材に注目し、地産地消のサイクルに貢献しています。<br>
+                    <br>
+                    本格的な味をを追求し、皆さまに豊かな時間を提供します。<br>
+                    土から見直した野菜、飼料を見直した牛や豚の食材など、専門家と共に開発を行ってきました。<br>
+                    お客様のご要望にお応えします。<br>
+                    <br>
+                    弊社はスタッフ教育を重視し、より質の高いサービスに誇りを持っています。<br>
+                    接客の基礎から食材の知識まで研修を済ませて店舗で勤務します。<br>
+                    ○○への留学研修を行い、本場の技術を取り入れています。<br>
+                    お客様からのフィードバックを取り入れる独自システムがあります。<br>
+                    <br>
+                    これからも従業員一同精進し、社会に貢献していける会社を目指していく所存にございます。<br>
+                    （などなど社長の挨拶のイメージ）<br>
+                </p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h2>事業所案内</h2>
+            <br>
+            <p>当サイトは架空のECサイトです。<br>従って下の地図はサンプルです。<br>(サンプルに伴い一関駅にしてあります。)</p>
+            <div class="tizu new">
+                <iframe class="tizu" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89606.00052264621!2d141.094268481692!3d38.95393429395285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f88da8586ad5917%3A0x7dd30822be589eb1!2z5LiA44OO6Zai6aeF!5e0!3m2!1sja!2sjp!4v1572872869381!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <br>
+        </div>
+    </main>
+    <footer class="col-12 bg-light border-top border-bottom">
+        <div class="sns-icon">
+            <ul class="follow-me">
+                <li><a href="https://twitter.com/taku820801"></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100005894676306"></a></li>
+                <li><a href="https://www.resume.id/taku820801"></a></li>
+            </ul>
+        </div>
+        <p class="f-moji">©︎takuchan shopping saite</p>
+    </footer>
+</div>
+</div>
+</body>
+</html>

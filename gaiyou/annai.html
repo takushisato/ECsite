@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>ｍｙＥCサイト</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9/build/highlight.min.js"></script>
+        <script>
+            hljs.initHighlightingOnLoad();
+            hljs.configure({
+                tabReplace: '  ', // 2 spaces
+            })
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+        <script src="https://cccabinet.jpn.org/bootstrap4/js/style.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+    <div class="container">
+        <div class="row">
+            <header class="col">
+                <a href="../index.html"><img src="../img/TOP.png" alt="タイトル画像"></a>
+            </header>
+            <div class="mt-3">
+                <a class="btn btn-warning kaimono" href="../shop/shop_cartlook.php" role="button">買い物かご</a>
+            </div>
+            <nav class="navbar navbar-expand-md navbar-light bg-light col-12 border-top border-bottom">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">当店について</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown">
+                                <a class="dropdown-item" href="../gaiyou/kaisya.html">ごあいさつ</a>
+                                <a class="dropdown-item" href="../gaiyou/annai.html">ご利用案内</a>
+                                <a class="dropdown-item" href="../gaiyou/tokutei.html">特定商取引法に基づく表示</a>
+                                <a class="dropdown-item" href="../toiawase/toiawase_form.html">お問い合わせ</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">お買い物はコチラ</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown">
+                                <a class="dropdown-item" href="../shop/shop_list.php">全ての商品</a>
+                                <a class="dropdown-item" href="../shop/shop_list_yasai.php">お野菜</a>
+                                <a class="dropdown-item" href="../shop/shop_list_niku.php">お肉</a>
+                                <a class="dropdown-item" href="../shop/shop_list_sakana.php">お魚</a>
+                                <a class="dropdown-item" href="../shop/shop_list_nitiyou.php">日用品</a>
+                                <a class="dropdown-item" href="../shop/shop_list_other.php">その他商品</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ギャラリーはコチラ</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown">
+                                <a class="dropdown-item" href="../gallery/gaikan.html">外観</a>
+                                <a class="dropdown-item" href="../gallery/naisou.html">内装</a>
+                            </div>
+                        </li>
+                        <div class="">
+                            <a class="btn btn-secondary" href="../shop/member_login.html" role="button">ログイン</a>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <main>
+                <div class="new">
+                    <br />
+                    <br />
+                    <h1>お買い物ガイド</h1>
+                    当店のお買い物ガイドです。
+                    不明点は遠慮なくご質問ください。
+                    <br />
+                    カード番号は暗号化されて送信されますのでご安心ください。<br />
+                    当カード決済システム上、クレジットカード利用控は発行しておりません。<br />
+                    カード会社から送付されますご利用明細をご確認ください。<br />
+                    <br />
+                    <br />
+                    <h2>支払い方法</h2>
+                    銀行振込(前払い)<br />
+                    銀行、郵便局などの金融機関をご利用いただけます。<br />
+                    ご都合のよい金融機関より下記振込先にお振込みください。<br />
+                    商品は入金確認後の出荷となります。<br />
+                    <br />
+                    <br>
+                    <h3>振込先</h3>
+                    ほんだら銀行<br />
+                    第一営業支店<br />
+                    普通 123456<br />
+                    田舎の店舗<br />
+                    <br />
+                    ・銀行振込(ペイジー)<br />
+                    各種金融機関のATMやインターネットバンキングをご利用いただけます。<br />
+                    ストアでの注文確定手続き後、注文時にご入力いただいたメールアドレスに支払いに必要な情報が記載されたメールが送信されますので、<br />
+                    その内容に従ってお振込みください。<br />
+                    商品は入金確認後の出荷となります。<br />
+                    <br />
+
+                    <h2>お支払い期限について</h2>
+                    ・クレジットカード決済をお選びいただいた場合<br />
+                    クレジットカード決済をお選びいただいた場合、商品発送後に決済が完了します。<br />
+                    引落し日は、各クレジットカード会社の締め日、支払日をご確認下さい。<br />
+                    <br />
+                    ・銀行振込(前払い)をお選びいただいた場合<br />
+                    ご注文後、7日以内にご都合のよい金融機関よりお振込みください。<br />
+                    8日を過ぎて入金が確認できない場合は、ご注文を自動的にキャンセルさせていただきます。<br />
+                    <br />
+                    ・銀行振込(ペイジー)をお選びいただいた場合<br />
+                    ご注文後、14日以内にご都合のよい金融機関よりお振込みください。<br />
+                    15日を過ぎて入金が確認できない場合は、ご注文を自動的にキャンセルさせていただきます。<br />
+                    <br />
+                    ・コンビニ決済(前払い)をお選びいただいた場合<br />
+                    ご注文後、14日以内にご希望のコンビニエンスストアにてお支払いください。<br />
+                    15日を過ぎて入金が確認できない場合は、ご注文を自動的にキャンセルさせていただきます。
+
+                    ※商品のお取り置きができないため、ご入金までに在庫が切れることがございます。<br>
+                    前払いの決済方法をご利用の場合はお早めのご入金をお願いいたします。<br><br>
+
+                    <h2>お届け方法</h2>
+                    通常配送<br>
+                    佐川急便<br>
+                    ヤマト運輸<br>
+                    通常便（s)<br>
+                    <br>
+
+                    <h2>商品のお届けについて</h2>
+                    出荷準備が整い次第、メールにて運送会社名、送り状番号などのご連絡をさせていただきます。<br />
+                    商品によって出荷元が異なる場合は別便でのお届けとなります。<br />
+                    <br />
+                    運送会社は当店の判断で決定いたします。お客様にお選びいただくことはできませんので予めご了承ください。<br />
+                    <br />
+                    予約品、メーカー直送品は上記のお届け日数には当てはまりません。必ず商品ページにてご確認ください。<br />
+                    <br />
+                    長期休業中(年末年始など)やその前後の配送については、時期が近づきましたらサイト上にてお知らせいたします。<br />
+                    <br />
+                    商品は原則として玄関での受け渡しとなっております(メゾネットタイプの住居にお住まいの方も玄関渡しとなりますのでご注意ください)。<br />
+                    ただし、エレベーターがない、商品がエレベーターに収まりきらない等の場合は、マンションのエントランスでの受け渡し、もしくは別途追加料金をご負担いただく場合がございます。<br />
+                    <br />
+                    搬入、設置、梱包材の処分はお客様にてお願いいたします。 また、基本的にドライバー１人での配送となるため、大型の商品につきましてはお客様に運搬のお手伝いをお願いすることがございます。<br />
+                    <br />
+                    <br>
+                    <h3>お届け日時の指定について</h3>
+                    配送日時のご希望がある場合は、日数に余裕をもってご指定いただきますようご協力をお願いいたします。<br />
+                    また、配送日時をご指定いただいた場合でも、交通状況、天候状況、配送先の地域によってはご希望通りの日時にお届けできない場合もございます。予めご了承ください。<br />
+                    <br />
+                    出荷準備完了後の日時指定につきましては、メールにてお知らせする配送番号をもとに直接運送会社にごお問い合わせください。<br />
+                    ※出荷準備完了から実際に出荷されるまでや、出荷されてから運送会社のシステムに配送番号が反映されるまでにはタイムラグがあります。<br />
+                    運送会社へのご連絡はメールに記載された出荷日以降にお願いいたします。<br />
+                    出荷日を過ぎても配送状況を確認できない場合は、お手数ですが当店までお問い合わせください。<br>
+                    <br>
+                    <br>
+                </main>
+            </div>
+        <footer class="col-12 bg-light border-top border-bottom">
+            <div class="sns-icon">
+                <ul class="follow-me">
+                    <li><a href="https://twitter.com/taku820801"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100005894676306"></a></li>
+                    <li><a href="https://www.resume.id/taku820801"></a></li>
+                </ul>
+            </div>
+            <p class="f-moji">©︎takuchan shopping saite</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

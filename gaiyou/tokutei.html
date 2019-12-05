@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>ｍｙＥCサイト</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9/build/highlight.min.js"></script>
+        <script>
+          hljs.initHighlightingOnLoad();
+          hljs.configure({
+              tabReplace: '  ', // 2 spaces
+          })
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+        <script src="https://cccabinet.jpn.org/bootstrap4/js/style.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+    <div class="container">
+        <div class="row">
+            <header class="col">
+                <a href="../index.html"><img src="../img/TOP.png" alt="タイトル画像"></a>
+            </header>
+            <div class="mt-3">
+                <a class="btn btn-warning kaimono" href="../shop/shop_cartlook.php" role="button">買い物かご</a>
+            </div>
+            <nav class="navbar navbar-expand-md navbar-light bg-light col-12 border-top border-bottom">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">当店について</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown">
+                                <a class="dropdown-item" href="../gaiyou/kaisya.html">ごあいさつ</a>
+                                <a class="dropdown-item" href="../gaiyou/annai.html">ご利用案内</a>
+                                <a class="dropdown-item" href="../gaiyou/tokutei.html">特定商取引法に基づく表示</a>
+                                <a class="dropdown-item" href="../toiawase/toiawase_form.html">お問い合わせ</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">お買い物はコチラ</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown">
+                                <a class="dropdown-item" href="../shop/shop_list.php">全ての商品</a>
+                                <a class="dropdown-item" href="../shop/shop_list_yasai.php">お野菜</a>
+                                <a class="dropdown-item" href="../shop/shop_list_niku.php">お肉</a>
+                                <a class="dropdown-item" href="../shop/shop_list_sakana.php">お魚</a>
+                                <a class="dropdown-item" href="../shop/shop_list_nitiyou.php">日用品</a>
+                                <a class="dropdown-item" href="../shop/shop_list_other.php">その他商品</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ギャラリーはコチラ</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown">
+                                <a class="dropdown-item" href="../gallery/gaikan.html">外観</a>
+                                <a class="dropdown-item" href="../gallery/naisou.html">内装</a>
+                            </div>
+                        </li>
+                        <div class="">
+                            <a class="btn btn-secondary" href="../shop/member_login.html" role="button">ログイン</a>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+          <main>
+          <br>
+            <br>
+            <h2>「特定商取引法に基づく表記」</h2>
+            <br>
+            <div class="col new">
+                <table border="2">
+                    <tbody>
+                        <tr><th>販売業者</th><td>たくまる商店</td></tr>
+                        <tr><th>代表責任者</th><td>たくまる子</td></tr>
+                        <tr><th>所在地</th><td>岩手県一関市田舎村過疎郡１２３−４</td></tr>
+                        <tr><th>電話番号</th><td>019△-○○○○-○○○○</td></tr>
+                        <tr><th>電話受付時間</th><td>9:00〜18:00</td></tr>
+                        <tr><th>公開メールアドレス</th><td>sample@xxxxxx.xxxxxx</td></tr>
+                        <tr><th>ホームページURL</th><td>http://www.xxxxxxxxxxxxxx</td></tr>
+                        <tr><th>販売価格</th><td>商品紹介ページをご参照ください。</td></tr>
+                        <tr><th>商品代金以外の必要料金</th><td>消費税、全国は一律で無料です。</td></tr>
+                        <tr><th>引き渡し時期</th><td>ご注文から6日以内にお届け致します。</td></tr>
+                        <tr><th>お支払方法</th><td>銀行振込、代引き</td></tr>
+                        <tr><th>返品・交換・キャンセル等</th><td>商品発送後の返品・返却等はお受け致しかねます。商品が不良の場合のみ良品と交換致します。</td></tr>
+                        <tr><th>返品期限</th><td>商品出荷より７日以内にご連絡下さい。</td></tr>
+                        <tr><th>返品送料</th><td>不良品の場合は弊社が負担いたします。<br>それ以外はお客様のご負担となります。</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+          </main>
+        <footer class="col-12 bg-light border-top border-bottom">
+          <div class="sns-icon">
+              <ul class="follow-me">
+                  <li><a href="https://twitter.com/taku820801"></a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=100005894676306"></a></li>
+                  <li><a href="https://www.resume.id/taku820801"></a></li>
+              </ul>
+          </div>
+          <p class="f-moji">©︎takuchan shopping saite</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
