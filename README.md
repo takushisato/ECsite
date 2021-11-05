@@ -1,4 +1,4 @@
-# shoppingsite
+# ECsite
 
 PHPにて制作した架空の通販サイト<br><br>
 https://store.takuchan.club/<br><br>
